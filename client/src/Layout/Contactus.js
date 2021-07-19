@@ -21,6 +21,8 @@ const contactus = (e) => {
 
 });
 history.push("/");
+window.location.reload();
+
 };
   return (
     <div>

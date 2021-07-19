@@ -14,14 +14,14 @@ const contactus = (e) => {
   }).then((response) => {
    console.log(response);
    window.location.reload();
-
 });
-history.push("/addnewsletter");
+history.push("/");
+window.location.reload();
 
 };
   return (
     <div>
-    <div class="page-heading contact-heading header-text">
+    <div class="page-heading news-heading header-text">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

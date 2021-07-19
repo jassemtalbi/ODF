@@ -27,7 +27,8 @@ console.log(formData)
 };
   return (
     <div>
-    <div class="page-heading contact-heading header-text">
+    <div>
+    <div class="page-heading add-heading header-text">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -39,8 +40,27 @@ console.log(formData)
         </div>
       </div>
     </div>
-    <AddProjectContainer>
-    <form onSubmit={contactus} encType='multipart/form-data'>
+    
+   
+    </div>
+     <div>
+   
+ 
+    
+     
+     <div class="send-message">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+             <div class="section-heading">
+               <h2>Add a new Project</h2>
+             </div>
+           </div>
+           <div class="col-md-8">
+             <div class="contact-form">
+             <form onSubmit={contactus} encType='multipart/form-data'>
+             <div class="row">
+                   <div class="col-lg-12 col-md-12 col-sm-12">
     <div className="form-group">
       <label htmlFor="title">Title</label>
       <input type="text" onChange={e=>settitle(e.target.value)} className="form-control" placeholder="title"/>
@@ -57,20 +77,23 @@ console.log(formData)
     <label htmlFor="file">image</label>
     <input type='file' filename='image' class="form-control-file"  onChange={onChangeFile}></input>
   </div>
-    <button type="submit" className="btn btn-primary">add Project</button>
+  <button type="submit" id="form-submit" class="filled-button">add Project</button>
+    </div>
+                 </div>
   </form>
 
-  </AddProjectContainer>
-    
-   
-    </div>
+
+             </div>
+           </div>
+           
+         </div>
+       </div>
+     </div>
+     <br></br>
+     </div>
+     </div>
   )
 }
 
 export default AddProject;
-const AddProjectContainer = styled.div`
-margin:3rem auto;
-padding :4rem;
-width:31.25rem;
 
-`

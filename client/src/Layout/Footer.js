@@ -16,14 +16,7 @@ function Footer() {
                         </div>
                         <p>Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                             consequ magni dolores eos qui ratione.</p>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">

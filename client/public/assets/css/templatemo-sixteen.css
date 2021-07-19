@@ -89,7 +89,7 @@ a.filled-button:hover {
 }
 
 .products-heading {
-	background-image: url(../images/images.jpg);
+	background-image: url(../images/listproject.jpg);
 }
 
 .about-heading {
@@ -100,6 +100,15 @@ a.filled-button:hover {
 	background-image: url(../images/contactus2.jpg);
 	
 }
+.add-heading {
+	background-image: url(../images/project.jpg);
+	
+}
+.news-heading {
+	background-image: url(../images/newsletter.jpg);
+	
+}
+
 
 .page-heading {
 	padding: 210px 0px 130px 0px;

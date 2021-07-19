@@ -32,9 +32,7 @@ function Aboutus() {
         <div class="col-md-6">
           <div class="right-image">
             <img src="assets/images/feature-image.jpg" alt="" />
-            <br></br>
-            <hr></hr>
-            <img src="assets/images/feature-image.jpg" alt="" />
+            
 
           </div>
         </div>
@@ -65,31 +63,12 @@ the following digital economy projects:
 
 Legal framework:
 <hr/>
-Tunisian Digital Strategy 2016-2020,
-<hr/>
 
-Startup Act law,
-<hr/>
-
-Other Digital Economy projects:
-
-Creation of “Carte Technologique” to overcome the limitations of foreign exchange
-for startups,
-
-Implementation of 4G licenses in Tunisia
-
-M-DEV national project to train and certify 5000 mobile developers,
-
-Purchase of Malta-GO by Tunisie télécom
-
-B@Labs startup incubator
 </li>
             </ul>
             <ul class="social-icons">
               <li><a href="https://www.facebook.com/Ourdigitalfutureorg-100461435164303"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
             </ul>
           </div>
         </div>
@@ -109,25 +88,6 @@ B@Labs startup incubator
         <div class="col-md-4">
           <div class="team-member">
             <div class="thumb-container">
-              <img src="assets/images/hamza.jpg" alt=""/>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="down-content">
-              <h4>Johnny William</h4>
-              <span>CO-Founder</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <div class="thumb-container">
               <img src="assets/images/nomeen.jpg" alt=""/>
               <div class="hover-effect">
                 <div class="hover-content">
@@ -138,9 +98,28 @@ B@Labs startup incubator
               </div>
             </div>
             <div class="down-content">
-              <h4>Karry Pitcher</h4>
-              <span>Product Expert</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+              <h4>Noomane Fehri</h4>
+              <span>Project Director</span>
+              <p>Noomane@ourdigitalfuture.org</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            <div class="thumb-container">
+              <img src="assets/images/hamza.jpg" alt=""/>
+              <div class="hover-effect">
+                <div class="hover-content">
+                  <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="down-content">
+              <h4>Hamza Guizani</h4>
+              <span>Incubation manager</span>
+              <p>hamza@ourdigitalfuture.org</p>
             </div>
           </div>
         </div>
@@ -151,15 +130,15 @@ B@Labs startup incubator
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="down-content">
               <h4>Sophie Gombart Masmoudi</h4>
-              <span>Chief Marketing</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+              <span>Head of Industrial Prototyping Unit</span>
+              <p>sophie@technoriat.com</p>
             </div>
           </div>
         </div>
@@ -170,16 +149,16 @@ B@Labs startup incubator
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                    
                   </ul>
                 </div>
               </div>
             </div>
             <div class="down-content">
-              <h4>Mary Cool</h4>
-              <span>Product Specialist</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+              <h4>Nebil Chemek</h4>
+              <span>PMO</span>
+              <p>pmo@ourdigitalfuture.org</p>
             </div>
           </div>
         </div>
@@ -190,7 +169,7 @@ B@Labs startup incubator
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   
                   </ul>
                 </div>
@@ -210,16 +189,16 @@ B@Labs startup incubator
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     
                   </ul>
                 </div>
               </div>
             </div>
             <div class="down-content">
-              <h4>Kate Town</h4>
-              <span>General Manager</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+              <h4>Ramzi Zammali</h4>
+              <span>Sourcing manager</span>
+              <p>ramzi@technoriat.com</p>
             </div>
           </div>
         </div>
@@ -283,23 +262,26 @@ B@Labs startup incubator
         <div class="col-md-12">
           <div class="owl-clients owl-carousel">
             <div class="client-item">
-              <img src="assets/images/client-01.png" alt="1"/>
+              <img src="assets/images/cea.png" alt="1"/>
             </div>
             
             <div class="client-item">
-              <img src="assets/images/client-01.png" alt="2"/>
+              <img src="assets/images/innovi.png" alt="2"/>
             </div>
             
             <div class="client-item">
-              <img src="assets/images/client-01.png" alt="3"/>
+              <img src="assets/images/ministere.jpg" alt="3"/>
             </div>
             
             <div class="client-item">
-              <img src="assets/images/client-01.png" alt="4"/>
+              <img src="assets/images/expertise.jpg" alt="4"/>
+            </div>
+            <div class="client-item">
+              <img src="assets/images/expertise.jpg" alt="4"/>
             </div>
             
             <div class="client-item">
-              <img src="assets/images/client-01.png" alt="5"/>
+              <img src="assets/images/ministere2.png" alt="5"/>
             </div>
             
             <div class="client-item">

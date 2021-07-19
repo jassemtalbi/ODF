@@ -36,27 +36,33 @@ function Navbar() {
             <li class="nav-item active">
               <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
+
               </a>
+              
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="/project">Our Project</a>
+              <Link to ="/project" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Project</Link>
+
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/aboutus">About Us</a>
+            <a class="nav-link" href="#aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contactus">Contact Us</a>
+              <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Contact Us</Link>
+
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/addproject">add Project</a>
+              <Link to ="/addproject" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">add Project</Link>
+
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/addnewsletter">Send newsletter</a>
+            <Link to ="/addnewsletter" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Send newsletter</Link>
             </li>
             <li class="nav-item">
             <div class="sign_btn" onClick={logout}><a href="/register">logout</a></div>
 
             </li>
+           
           </ul>
         </div>
       </div>

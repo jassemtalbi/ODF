@@ -20,7 +20,7 @@ const [filename,setfilename]=useState('');
   return (
     
     <div>
-    
+   
 <div class="banner header-text">
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
@@ -43,11 +43,43 @@ const [filename,setfilename]=useState('');
         </div>
       </div>
     </div>
+    <div class="best-features" id='aboutus'>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Digital Future at a glance</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>          ODF is a pan African consultancy firm specialized in:</h4>
+              <ul class="featured-list">
+                <li>Public policy development and appropriation</li>
+                <li>Innovation ecosystems development</li>
+                <li>Digital transformation</li>
+               
+              </ul>
+              <a href="/aboutus" class="filled-button">Read More</a>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="assets/images/feature-image.jpg" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="products">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="filters">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">Aboutm Us</a>
+            </li>
             <ul>
                 <li class="active" data-filter="*">All Projects</li>
                 
@@ -82,35 +114,7 @@ const [filename,setfilename]=useState('');
     </div> 
     </div>
     </div>
-    <div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Our Digital Future at a glance</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <h4>          ODF is a pan African consultancy firm specialized in:</h4>
-              <ul class="featured-list">
-                <li>Public policy development and appropriation</li>
-                <li>Innovation ecosystems development</li>
-                <li>Digital transformation</li>
-               
-              </ul>
-              <a href="/aboutus" class="filled-button">Read More</a>
-
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt=""/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
    </section>
 </div>
    </div>
