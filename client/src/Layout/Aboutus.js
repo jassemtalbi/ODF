@@ -4,6 +4,7 @@ import Axios from "axios";
 function Aboutus() {
 
   return (
+    
       <div>
     <div class="page-heading about-heading header-text">
     <div class="container">
@@ -12,7 +13,6 @@ function Aboutus() {
           <div class="text-content">
             
             <h4>about us</h4>
-
             <h2>our company</h2>
           </div>
         </div>
@@ -41,34 +41,28 @@ function Aboutus() {
           <div class="left-content">
             <h4>Who we are  What we do?</h4>
             <ul>
-                <li><h3>ODF is a pan African consultancy firm specialized in:</h3>
+                <li><h4>ODF is a pan African consultancy firm specialized in</h4>
 
                       Public policy development and appropriation
                       <br/>
 
 Innovation ecosystems development
 <br/>
-
 Digital transformation
 <br/>
-<hr/>
 ODF is Founded in 2016 by senior internationally trusted specialists with
 extensive global network with public and private sector experiences,
-
 ODF uses a human centric participative approach to design and deliver
-sustainable programs,</li>
-<li>
+sustainable programs,
 ODF managing partners was responsible for the design and implemented
-the following digital economy projects:
-
-Legal framework:
+the following digital economy projects Legal framework
 <hr/>
 
 </li>
             </ul>
             <ul class="social-icons">
               <li><a href="https://www.facebook.com/Ourdigitalfutureorg-100461435164303"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/our-digital-future-203610206/"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -92,7 +86,7 @@ Legal framework:
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/noomanefehri/"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -111,7 +105,7 @@ Legal framework:
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/hamza-guizani-253ba855/"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -130,7 +124,7 @@ Legal framework:
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/asophie/"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -142,6 +136,16 @@ Legal framework:
             </div>
           </div>
         </div>
+        <div class="col-md-2">
+          <div class="team-member">
+            <div class="thumb-container">
+              
+            </div>
+            <div class="down-content">
+             
+            </div>
+          </div>
+          </div>
         <div class="col-md-4">
           <div class="team-member">
             <div class="thumb-container">
@@ -149,7 +153,7 @@ Legal framework:
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nebil-chemek-3bb598b/"><i class="fa fa-linkedin"></i></a></li>
                    
                   </ul>
                 </div>
@@ -162,26 +166,7 @@ Legal framework:
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <div class="thumb-container">
-              <img src="assets/images/a.jpg" alt=""/>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="down-content">
-              <h4>George Walker</h4>
-              <span>Product Photographer</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
-            </div>
-          </div>
-        </div>
+       
         <div class="col-md-4">
           <div class="team-member">
             <div class="thumb-container">
@@ -189,7 +174,7 @@ Legal framework:
               <div class="hover-effect">
                 <div class="hover-content">
                   <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ramzi-zammali-98a19928/"><i class="fa fa-linkedin"></i></a></li>
                     
                   </ul>
                 </div>
@@ -262,30 +247,24 @@ Legal framework:
         <div class="col-md-12">
           <div class="owl-clients owl-carousel">
             <div class="client-item">
-              <img src="assets/images/cea.png" alt="1"/>
+              <img src="assets/images/odf.png" alt="1"/>
+            </div>
+            <div class="client-item">
+              <img src="assets/images/ATT.png" alt="2"/>
+            </div>
+            <div class="client-item">
+              <img src="assets/images/ministere2.png" alt="3"/>
+            </div>
+            <div class="client-item">
+              <img src="assets/images/cea.png" alt="4"/>
+            </div>
+            <div class="client-item">
+              <img src="assets/images/3logoall.jpg" alt="5"/>
             </div>
             
+          
             <div class="client-item">
-              <img src="assets/images/innovi.png" alt="2"/>
-            </div>
-            
-            <div class="client-item">
-              <img src="assets/images/ministere.jpg" alt="3"/>
-            </div>
-            
-            <div class="client-item">
-              <img src="assets/images/expertise.jpg" alt="4"/>
-            </div>
-            <div class="client-item">
-              <img src="assets/images/expertise.jpg" alt="4"/>
-            </div>
-            
-            <div class="client-item">
-              <img src="assets/images/ministere2.png" alt="5"/>
-            </div>
-            
-            <div class="client-item">
-              <img src="assets/images/client-01.png" alt="6"/>
+              <img src="assets/images/technoriat.jpg" alt="6"/>
             </div>
           </div>
         </div>

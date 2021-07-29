@@ -56,13 +56,9 @@ window.location.reload();
           </div>
           <div class="col-md-4">
             <div class="left-content">
-              <h4>About our office</h4>
+              <h4>17 street ibn charaf Belvedère, Tunis</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
+             
             </div>
           </div>
         </div>
@@ -80,45 +76,70 @@ window.location.reload();
           </div>
           <div class="col-md-8">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                   
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required=""  onChange={(e) => {
-                      setfullname(e.target.value);
-                    }}/>
-                    </fieldset>
+            <form onSubmit={contactus} encType="multipart/form-data">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div className="form-group">
+                        <label htmlFor="title">Fullname</label>
+                        <input
+                          type="text"
+                          onChange={(e) => {
+                            setfullname(e.target.value);
+                          }}
+                          className="form-control"
+                          placeholder="Fullname"
+                          required
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="eventname">Email</label>
+                        <input
+                          type="text"
+                          onChange={(e) => {
+                            setemail(e.target.value);
+                          }}
+                          className="form-control"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+
+                      <div className="form-group">
+                        <label htmlFor="eventname">Subject</label>
+                        <input
+                          type="text"
+                          onChange={(e) => {
+                            setsubject(e.target.value);
+                          }}
+                          className="form-control"
+                          placeholder="Subject"
+                          required
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="eventname">Message</label>
+                        <textarea
+                          type="text"
+                          onChange={(e) => {
+                            settext(e.target.value);
+                          }}
+                          className="form-control"
+                          placeholder="Message"
+                          required
+                        />
+                      </div>
+                      <br></br>
+                      <button
+                        type="submit"
+                        id="form-submit"
+                        class="filled-button"
+                      >
+                        Send Message
+                      </button>
+                     
+                    </div>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required=""  onChange={(e) => {
-                      setemail(e.target.value);
-                    }}/>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required=""  onChange={(e) => {
-                      settext(e.target.value);
-                    }}/>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""  onChange={(e) => {
-                      setsubject(e.target.value);
-                    }}></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button"  onClick={contactus}>Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
+                </form>         </div>
           </div>
           <div class="col-md-4">
             <ul class="accordion">

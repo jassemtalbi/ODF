@@ -6,7 +6,10 @@ var usermodel = require("../models/user");
 var newsletter = require("../models/newsletter");
 var contactus = require("../models/contactus");
 var project = require("../models/project");
-
+const { OAuth2Client } = require("google-auth-library");
+const client = new OAuth2Client(
+  "28167715721-dcopiok9t9bf2c48hacvvtn589qtdei0.apps.googleusercontent.com"
+);
 const jwt = require('jsonwebtoken')
 const multer = require("multer");
 
@@ -169,7 +172,8 @@ router.post("/Contactus", async function (req, res, next) {
       from: email,
       to: "jassemtalbi2@gmail.com",
       subject: subject,
-      text: "Good morning im" +" "+fullname+" i send this email for "+" "+text+" "+"send by"+"" + email,
+      text: "Good morning im" +" "+fullname+" i send this email for "+" "+text+" "+"send by "+" "+ email,
+
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -210,4 +214,95 @@ router.get("/getRole", function (req, res, next) {
     })
 });
 });
+router.post('/googlelogin/',(req,response,next)=>{
+  const{tokenId}=req.body;
+  client.verifyIdToken({idToken:tokenId,audience:'28167715721-dcopiok9t9bf2c48hacvvtn589qtdei0.apps.googleusercontent.com'}).then(res=>{
+   const{email_verified,name,email,given_name,family_name,picture}=res.payload;
+   console.log(res.payload)
+   if(email_verified){
+    usermodel.findOne({email}).exec((err,user)=>{
+       if(err){
+        console.log(err)
+
+       } else{
+         if(user){
+const token = jwt.sign(
+      {
+        _id: user._id,
+        username:user.username,
+        role:user.role
+      },
+      "secretkey",
+      { expiresIn: "3600s" },
+      JWT_SECRET
+      );
+      console.log("token login",token)
+      // const decode=jwt_decode(token)
+      //console.log('decode',decode)
+       response.json({ status: "ok", data: token });
+
+      //console.log(data)
+         }else{
+console.log(name)
+let newUser= new usermodel({username:name,email:email,firstname:given_name,lastname:family_name,picture:picture})
+    try {
+      newUser.save()
+      const token = jwt.sign(
+        {
+          _id: newUser._id,
+          username:newUser.username,
+          role:newUser.role
+
+        },
+        "secretkey",
+        { expiresIn: "3600s" },
+        JWT_SECRET
+        );
+        var transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: "edubot4twin5@gmail.com",
+            pass: "Edubot404",
+          },
+        });
+    
+        var mailOptions = {
+          from: "ODF",
+          to: newUser.email,
+          subject: "Register In ODF ",
+          text:
+            "Welcom  to ODF , your registration is successful , your username is : " +JSON.stringify(newUser.username),
+        };
+    
+        transporter.sendMail(mailOptions, function (error, info) {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log("Email sent: " + info.response);
+          }
+        });
+        console.log("token register",token)
+        response.json({ status: "ok", data: token });
+
+      console.log("User created successfully: ",newUser);
+    } catch (error) {
+      if (error.code === 11000) {
+        // duplicate key
+        return res.json({ status: "error", error: "Username already in use" });
+      }
+      throw error;
+    }
+//let newUser= new User({username:name,email:email,firstname:given_name,lastname:family_name})
+//newUser.save((err,data)=>{
+  // if (err) {
+    // duplicate key
+// console.log('user already to user')  }
+// })
+ 
+         }
+       }
+     })
+   }
+  })
+})
 module.exports = router;

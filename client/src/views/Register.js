@@ -56,16 +56,20 @@ function Register() {
 
   return (
     <body>
+    <main >
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 mx-auto">
-            <div id="second">
-              <div class="myform form ">
-                <div class="logo mb-3">
-                  <div class="col-md-12 text-center">
-                    <h1>Signup</h1>
-                  </div>
+        <div class="card login-card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="assets/images/login.jpg" alt="login" class="login-card-img"/>
+            </div>
+            <div >
+              <div class="card-body">
+                <div class="brand-wrapper">
+                  <img src="assets/images/odf.png" alt="logo" class="logo"/>
                 </div>
+                <p class="login-card-description">sign up</p>
+                
                 <div class="form-group">
                   <label for="exampleInputEmail1">username</label>
                   <input
@@ -146,23 +150,15 @@ function Register() {
                   </button>
                   
                 </div>
-                <div class="col-md-12 ">
-                  <div class="form-group">
-                    <p class="text-center">
-                      <Link to="/login" id="signin">
-                        Already have an account?
-                      </Link>
-                      <hr></hr>
-                     
-                    </p>
-                  </div>
-                </div>
+                 
               </div>
             </div>
           </div>
         </div>
+
       </div>
-    </body>
+    </main>
+  </body>
   );
 }
 export default Register;

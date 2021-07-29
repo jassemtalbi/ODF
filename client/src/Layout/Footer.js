@@ -12,10 +12,9 @@ function Footer() {
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="f-about single-footer">
                         <div class="logo">
-                            <a href="index.html"><img src="/assets/images/odf.png" alt="Logo"/></a>
+                            <a href="/aboutus"><img src="/assets/images/odf.png" alt="Logo"/></a>
                         </div>
-                        <p>Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequ magni dolores eos qui ratione.</p>
+                        <p>ODF is Founded in 2016 by senior internationally trusted specialists with extensive global network with public and private sector experiences.</p>
                         
                     </div>
                 </div>

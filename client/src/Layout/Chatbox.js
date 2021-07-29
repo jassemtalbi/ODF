@@ -222,10 +222,11 @@ return note;
                                 <div class="d-flex align-items-center justify-content-end">
                                     <div class="mx-10">
                                         <a href="#" class="text-dark hover-primary font-weight-bold">You</a>
-                                        <p class="text-muted font-size-12 mb-0">3 minutes</p>
+                                        <p class="text-muted font-size-12 mb-0">                {new Date().toLocaleString()}
+</p>
                                     </div>
                             <span class="msg-avatar">
-                                <img src="../images/avatar/3.jpg" class="avatar avatar-lg"/>
+                                <img src="assets/images/3.jpg" class="avatar avatar-lg"/>
                             </span>
                                 </div>
                         <div class="cm-msg-text"> <Message key={i} who={message.who} text={message.message} /> </div>        
@@ -252,7 +253,7 @@ return note;
                             <div class="chat-msg user">
                                 <div class="d-flex align-items-center">
                                     <span class="msg-avatar">
-                                        <img src="../images/avatar/2.jpg" class="avatar avatar-lg"/>
+                                        <img src="assets/images/2.jpg" class="avatar avatar-lg"/>
                                     </span>
                                     <div class="mx-10">
                                         <a href="#" class="text-dark hover-primary font-weight-bold">ODFbot</a>
@@ -364,7 +365,7 @@ return(<> <div className="container-fluid shadow p-3 mb-5 bg-body rounded ">
 									<input type="radio" checked={radioquiz[i]==="1"}  onClick={(e)=>{(radioquiz.splice(i,1,yos.rep1));setradioquiz(radioquiz);}} name="q_answer"  defaultValue={yos.rep1} /> {yos.rep1}</label> <label  className="element-animation2 btn btn-lg btn-success btn-block"><span className="btn-label"><i className="glyphicon glyphicon-chevron-right" /></span> 
 									<input type="radio" checked={radioquiz[i]==="2"} onClick={(e)=>{(radioquiz.splice(i,1,yos.rep2));setradioquiz(radioquiz);}} name="q_answer" defaultValue={yos.rep2} />{yos.rep2}</label> <label className="element-animation3 btn btn-lg btn-success btn-block"><span className="btn-label"><i className="glyphicon glyphicon-chevron-right" /></span> 
 									<input type="radio" checked={radioquiz[i]==="3"} onClick={(e)=>{(radioquiz.splice(i,1,yos.rep3));setradioquiz(radioquiz);console.log(radioquiz)}} name="q_answer" defaultValue={yos.rep3} />{yos.rep3}</label>  </div>
-									
+					
 								</div>
 						
 
@@ -432,7 +433,7 @@ return(<> <div className="container-fluid shadow p-3 mb-5 bg-body rounded ">
             <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
                 
                 <div class="text-center flex-grow-1">
-                    <div class="text-dark font-size-18">ODFBot</div>
+                    <div class="text-dark font-size-18">OdfBot</div>
                     <div>
                         <span class="badge badge-sm badge-dot badge-primary"></span>
                         <span class="text-muted font-size-12">Active</span>

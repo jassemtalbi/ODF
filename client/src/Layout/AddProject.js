@@ -60,32 +60,39 @@ console.log(formData)
              <div class="contact-form">
              <form onSubmit={contactus} encType='multipart/form-data'>
              <div class="row">
-                   <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="col-lg-12 col-md-12 col-sm-12">
     <div className="form-group">
       <label htmlFor="title">Title</label>
-      <input type="text" onChange={e=>settitle(e.target.value)} className="form-control" placeholder="title"/>
+      <input type="text" onChange={e=>settitle(e.target.value)} className="form-control" placeholder="title" required/>
     </div>
     <div className="form-group">
       <label htmlFor="eventname">EventName</label>
-      <input type="text" onChange={e=>setevent(e.target.value)} className="form-control"  placeholder="Event Name"/>
+      <input type="text" onChange={e=>setevent(e.target.value)} className="form-control"  placeholder="Event Name" required/>
     </div>
     <div class="form-group">
     <label for="exampleFormControlTextarea1">Description</label>
-    <textarea class="form-control" onChange={e=>setdescription(e.target.value)}  rows="3"></textarea>
+    <textarea class="form-control" onChange={e=>setdescription(e.target.value)}  rows="3" required></textarea>
   </div>
   <div class="form-group">
-    <label htmlFor="file">image</label>
-    <input type='file' filename='image' class="form-control-file"  onChange={onChangeFile}></input>
+  <label htmlFor="file">image</label>
+  <div class="custom-file">
+
+<input type="file" filename='image' class="custom-file-input" id="validatedCustomFile" onChange={onChangeFile} required />
+<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+<div class="invalid-feedback">Example invalid custom file feedback</div>
+</div>
   </div>
+
+ 
+  <br></br>
   <button type="submit" id="form-submit" class="filled-button">add Project</button>
     </div>
                  </div>
   </form>
-
+  
 
              </div>
            </div>
-           
          </div>
        </div>
      </div>

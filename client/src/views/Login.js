@@ -27,7 +27,7 @@ function Login() {
     console.log(response);
     Axios({
       method: "POST",
-      url: "/user/googlelogin/",
+      url: "http://localhost:5000/user/googlelogin/",
       data: { tokenId: response.tokenId },
     }).then((response) => {
       localStorage.setItem("Data", response.data.data);
@@ -75,104 +75,84 @@ function Login() {
     window.location.reload();
   };
   useEffect(() => {
-    Axios.get(`/user/displayProfile/${id}/`)
-      .then((res) => {
-        setuserList(res.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+   
   }, []);
 
   return (
+    
     <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 mx-auto">
-            <div id="first">
-              <div class="myform form ">
-                <div class="logo mb-3">
-                  <div class="col-md-12 text-center">
-                    <h1>Login</h1>
-                  </div>
-                </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Username</label>
-                    <input
-                      type="text"
-                      name="email"
-                      class="form-control"
-                      onChange={(e) => {
+  
+ 
+    <div class="d-lg-flex half">
+      <div class="bg order-1 order-md-2" style={{ 
+      backgroundImage: `url("assets/images/login.jpg")` }}></div>
+      <div class="contents order-2 order-md-1">
+  
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7">
+            <div class="col-md-5">
+              <img src="assets/images/odf.png" alt="login" />
+            </div>
+            <hr></hr>
+              <h3>Login to <strong>ODF</strong></h3>
+                <div class="form-group first">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control"  onChange={(e) => {
                         setUsername(e.target.value);
-                      }}
-                      id="email"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Password</label>
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      onChange={(e) => {
+                      }} placeholder="your username" id="username"/>
+                </div>
+                <div class="form-group last mb-3">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" onChange={(e) => {
                         setPassword(e.target.value);
-                      }}
-                      class="form-control"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter Password"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <p class="text-center">
-                      By signing up you accept our <a href="#">Terms Of Use</a>
-                    </p>
-                  </div>
-                  <div class="col-md-12 text-center ">
-                    <button
-                      class=" btn btn-block mybtn btn-primary tx-tfm"
-                      type="submit"
-                      id="button-addon3"
-                      onClick={login}
-                    >
-                      login
-                    </button>
-                  </div>
-                  <div class="col-md-12 ">
-                    <div class="login-or">
-                      <hr class="hr-or" />
-                      <span class="span-or">or</span>
-                    </div>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <p class="text-center">
-                      <GoogleLogin
+                      }} placeholder="Your Password" id="password"/>
+                </div>
+                
+                <a href='/register'>dosen't have an account !</a>
+                 <br></br>
+          <div class="col-md-8">
+            <div class="contact-form">
+                <div class="row">
+                 
+                  <div class="col-lg-12">
+                    <fieldset>
+                      
+                      <button type="submit" id="form-submit" class="filled-button" onClick={login}  >Login</button>
+                      
+                      <span class="span-or">  - or -  </span>
+                                    <GoogleLogin
                         class="btn"
                         type="submit"
                         id="button-addon3"
-                        clientId="672601858751-vhnn8mdk7d2r1j61vggtnmeljdqeliol.apps.googleusercontent.com"
+                        clientId="28167715721-dcopiok9t9bf2c48hacvvtn589qtdei0.apps.googleusercontent.com"
                         buttonText="Login"
                         onSuccess={responseSuccessGoogle}
                         onFailure={responseErrorGoogle}
                         cookiePolicy={"single_host_origin"}
-                      />
-                    </p>
+                      /> </fieldset>
+                   
                   </div>
-                  <div class="form-group">
-                    <p class="text-center">
-                      Don't have account?{" "}
-                      <a href="/register" id="signup">
-                        Sign up here
-                      </a>
-                    </p>
-                  </div>
-              </div>
+                </div>
+            
+         
+        </div>
+      </div>
+  
+  
             </div>
           </div>
         </div>
       </div>
+  
+      
+    </div>
+      
+      
+  
+    
     </body>
+    
   );
 }
 export default Login;

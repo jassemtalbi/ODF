@@ -12,11 +12,9 @@ import Newsletter from './views/newsletter'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
-  return (<>
-    
+  return (<> 
     <div className="App">
     <>
-
     <BrowserRouter basename="/">
         <Switch>
 

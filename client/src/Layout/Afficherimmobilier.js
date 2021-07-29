@@ -72,13 +72,14 @@ const [filename,setfilename]=useState('');
         </div>
       </div>
     </div>
+    
+    <hr></hr>
     <div class="products">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="filters">
           <li class="nav-item">
-            <a class="nav-link" href="#aboutus">Aboutm Us</a>
             </li>
             <ul>
                 <li class="active" data-filter="*">All Projects</li>
@@ -89,35 +90,43 @@ const [filename,setfilename]=useState('');
        </div>
        </div>
       
-    <section class="services_area pt-115" id="about">
+       <section class="services_area pt-115" id="about">
     <div class="container">
     <div class="product-grid-list">
+    <div class="services">
 
 <div class="row mt-30">
                 {userList.map((val, key) => {
                   return (
-                    <div class="col-sm-12 col-lg-4 col-md-6">
-                       <div class="product-item">
-                        <a href="#"><img src={`/uploads/${val.image}`} alt=""/></a>
-                        <div class="down-content">
-                          <a href="#"><h4>{val.title}</h4></a>
-                          <a href="#"><h3>{val.event}</h3></a>
+                    
+                  <div class="col-md-4">
+          <div class="service-item">
+            <div class="icon">
+            <a href="#"><img src={`/uploads/${val.image}`} width="300" height="400" alt=""/></a>
 
-                          <p>{val.description}</p>
-                          
-                        </div>
-                      </div>
-                   
-                </div>
+            </div>
+            <div class="down-content">
+            <h3>{val.event}</h3>
+              <h4>{val.title}</h4>
+              <p>{val.description}</p>
+            </div>
+          </div>
+          <hr></hr>
+        </div>
                   );
                 })}
     </div> 
     </div>
     </div>
+    </div>
+  
    
-   </section>
+    </section>
 </div>
+
+
    </div>
+
  
   );
 }
