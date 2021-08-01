@@ -51,7 +51,7 @@ window.location.reload();
           <div class="col-md-8">
 
             <div id="map">
-              <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameborder="0" style={{border:"0"}} allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6387.147273202429!2d10.185379500056303!3d36.828735571052135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2stn!4v1627640571240!5m2!1sfr!2stn" width="100%" height="330px" frameborder="0" style={{border:"0"}} allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-md-4">

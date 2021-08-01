@@ -20,10 +20,11 @@ const contactus = (e) => {
   formData.append('event',event)
   formData.append('image',filename)
   Axios.post("http://localhost:5000/user/addproject", formData).then((response) => {
-   console.log(response);
-   //window.location.reload();
-console.log(formData)
-});
+    console.log(response);
+    window.location.reload();
+  });
+  history.push("/");
+  window.location.reload();
 };
   return (
     <div>

@@ -140,16 +140,45 @@ function Register() {
                     placeholder="Enter Password"
                   />
                 </div>
-                <div class="col-md-12 text-center mb-3">
-                  <button
-                    type="submit"
-                    class=" btn btn-block mybtn btn-primary tx-tfm"
-                    onClick={register}
-                  >
-                    Get Started in ODF
-                  </button>
-                  
+               
+                <a href='/login'>already have an account </a>
+<br></br>
+      <div class="contents order-2 order-md-1">
+  <br></br>
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7">
+          
+          <div class="col-md-8">
+            <div class="contact-form">
+                <div class="row">
+
+                  <div class="col-lg-12">
+                    <fieldset>
+                      
+                      <button type="submit" id="form-submit" class="filled-button" onClick={register}  >Register</button>
+                      
+                                 </fieldset>
+                   
+                  </div>
                 </div>
+            
+         
+        </div>
+      </div>
+  
+  
+            </div>
+          </div>
+        </div>
+  
+      
+    </div>
+      
+      
+  
+    
+    
                  
               </div>
             </div>

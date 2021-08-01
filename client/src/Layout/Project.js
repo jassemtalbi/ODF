@@ -53,19 +53,21 @@ function Project() {
     <div class="services">
 
 <div class="row mt-30">
-                {userList.map((val, key) => {
+<div class="col-md-2">
+  </div>
+{userList.map((val, key) => {
                   return (
                     
                   <div class="col-md-4">
           <div class="service-item">
             <div class="icon">
-            <a href="#"><img src={`/uploads/${val.image}`} width="300" height="400" alt=""/></a>
+            <a href="#"><img src={`/uploads/${val.image}`} width="475" height="130" alt=""/></a>
 
             </div>
             <div class="down-content">
-            <h3>{val.event}</h3>
-              <h4>{val.title}</h4>
-              <p>{val.description}</p>
+            <h1><strong>{val.event}</strong></h1>
+              <h4><strong>{val.title}</strong></h4>
+              <p><strong>{val.description}</strong></p>
             </div>
           </div>
           <hr></hr>
@@ -86,6 +88,12 @@ function Project() {
           </div>
           <div class="col-md-6">
             <div class="left-content">
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
               <h4>          ODF is a pan African consultancy firm specialized in:</h4>
               <ul class="featured-list">
                 <li>Public policy development and appropriation</li>
@@ -97,7 +105,7 @@ function Project() {
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt=""/>
+              <img src="assets/images/expliqué.jpg"  alt=""/>
             </div>
           </div>
         </div>

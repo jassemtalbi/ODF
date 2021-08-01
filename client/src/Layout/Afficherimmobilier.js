@@ -25,20 +25,17 @@ const [filename,setfilename]=useState('');
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h2>New challenge</h2>
           </div>
         </div>
         <div class="banner-item-02">
           <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
+            <h2>Best Team</h2>
           </div>
         </div>
         <div class="banner-item-03">
           <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
+            <h2>we communicate</h2>
           </div>
         </div>
       </div>
@@ -53,6 +50,10 @@ const [filename,setfilename]=useState('');
           </div>
           <div class="col-md-6">
             <div class="left-content">
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
               <h4>          ODF is a pan African consultancy firm specialized in:</h4>
               <ul class="featured-list">
                 <li>Public policy development and appropriation</li>
@@ -66,7 +67,7 @@ const [filename,setfilename]=useState('');
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt=""/>
+              <img src="assets/images/expliqué.jpg" alt=""/>
             </div>
           </div>
         </div>
@@ -102,13 +103,13 @@ const [filename,setfilename]=useState('');
                   <div class="col-md-4">
           <div class="service-item">
             <div class="icon">
-            <a href="#"><img src={`/uploads/${val.image}`} width="300" height="400" alt=""/></a>
+            <img src={`/uploads/${val.image}`} width="475" height="130" alt=""/>
 
             </div>
             <div class="down-content">
-            <h3>{val.event}</h3>
-              <h4>{val.title}</h4>
-              <p>{val.description}</p>
+            <h1><strong>{val.event}</strong></h1>
+             <a href={val.title}><h4><strong>{val.title}</strong></h4></a>
+              <p><strong>{val.description}</strong></p>
             </div>
           </div>
           <hr></hr>

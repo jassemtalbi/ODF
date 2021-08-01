@@ -120,17 +120,7 @@ function Login() {
                       
                       <button type="submit" id="form-submit" class="filled-button" onClick={login}  >Login</button>
                       
-                      <span class="span-or">  - or -  </span>
-                                    <GoogleLogin
-                        class="btn"
-                        type="submit"
-                        id="button-addon3"
-                        clientId="28167715721-dcopiok9t9bf2c48hacvvtn589qtdei0.apps.googleusercontent.com"
-                        buttonText="Login"
-                        onSuccess={responseSuccessGoogle}
-                        onFailure={responseErrorGoogle}
-                        cookiePolicy={"single_host_origin"}
-                      /> </fieldset>
+                                 </fieldset>
                    
                   </div>
                 </div>
