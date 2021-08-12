@@ -433,7 +433,7 @@ return(<> <div className="container-fluid shadow p-3 mb-5 bg-body rounded ">
             <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
                 
                 <div class="text-center flex-grow-1">
-                    <div class="text-dark font-size-18">OdfBot</div>
+                    <div class="text-dark font-size-18">ODFBot</div>
                     <div>
                         <span class="badge badge-sm badge-dot badge-primary"></span>
                         <span class="text-muted font-size-12">Active</span>

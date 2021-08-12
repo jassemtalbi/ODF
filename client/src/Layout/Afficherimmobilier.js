@@ -92,23 +92,25 @@ const [filename,setfilename]=useState('');
        </div>
       
        <section class="services_area pt-115" id="about">
-    <div class="container">
+       <div class="container">
     <div class="product-grid-list">
     <div class="services">
 
 <div class="row mt-30">
-                {userList.map((val, key) => {
+<div class="col-md-2">
+  </div>
+{userList.map((val, key) => {
                   return (
                     
                   <div class="col-md-4">
           <div class="service-item">
             <div class="icon">
-            <img src={`/uploads/${val.image}`} width="475" height="130" alt=""/>
+            <a href="#"><img src={`/uploads/${val.image}`} width="475" height="130" alt=""/></a>
 
             </div>
             <div class="down-content">
             <h1><strong>{val.event}</strong></h1>
-             <a href={val.title}><h4><strong>{val.title}</strong></h4></a>
+             <a href={`${val.title}`}> <h4><strong>{val.title}</strong></h4></a>
               <p><strong>{val.description}</strong></p>
             </div>
           </div>
@@ -119,6 +121,7 @@ const [filename,setfilename]=useState('');
     </div> 
     </div>
     </div>
+  
     </div>
   
    

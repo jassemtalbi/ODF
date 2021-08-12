@@ -63,12 +63,12 @@ const contactus = (e) => {
              <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
     <div className="form-group">
-      <label htmlFor="title">Title</label>
-      <input type="text" onChange={e=>settitle(e.target.value)} className="form-control" placeholder="title" required/>
+      <label htmlFor="title">URL</label>
+      <input type="text" onChange={e=>settitle(e.target.value)} className="form-control" placeholder="URL" required/>
     </div>
     <div className="form-group">
-      <label htmlFor="eventname">EventName</label>
-      <input type="text" onChange={e=>setevent(e.target.value)} className="form-control"  placeholder="Event Name" required/>
+      <label htmlFor="eventname">Project Name</label>
+      <input type="text" onChange={e=>setevent(e.target.value)} className="form-control"  placeholder="Project Name" required/>
     </div>
     <div class="form-group">
     <label for="exampleFormControlTextarea1">Description</label>

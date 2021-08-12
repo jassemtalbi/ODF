@@ -8,6 +8,7 @@ import Project from './views/project'
 import Login from './views/Login'
 import AddProject from './views/addproject'
 import Newsletter from './views/newsletter'
+import Team from './views/team'
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -24,6 +25,8 @@ function App() {
         <Route exact  path="/register" render={(props) => <Register {...props} />}></Route>
         <Route exact  path="/project" render={(props) => <Project {...props} />}></Route>
         <Route exact  path="/login" render={(props) => <Login {...props} />}></Route>
+        <Route exact  path="/team" render={(props) => <Team {...props} />}></Route>
+
         <Route exact  path="/addproject" render={(props) => <AddProject {...props} />}></Route>
         
         <Route exact  path="/addnewsletter" render={(props) => <Newsletter {...props} />}></Route>

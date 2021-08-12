@@ -61,12 +61,12 @@ function Project() {
                   <div class="col-md-4">
           <div class="service-item">
             <div class="icon">
-            <a href="#"><img src={`/uploads/${val.image}`} width="475" height="130" alt=""/></a>
+            <a href="#"><img src={`/uploads/${val.image}`} width="475" height="80" alt=""/></a>
 
             </div>
             <div class="down-content">
             <h1><strong>{val.event}</strong></h1>
-              <h4><strong>{val.title}</strong></h4>
+            <a href={`${val.title}`}> <h4><strong>{val.title}</strong></h4></a>
               <p><strong>{val.description}</strong></p>
             </div>
           </div>

@@ -31,7 +31,6 @@ window.location.reload();
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>contact us</h4>
               <h2>let’s get in touch</h2>
             </div>
           </div>
@@ -56,8 +55,19 @@ window.location.reload();
           </div>
           <div class="col-md-4">
             <div class="left-content">
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
               <h4>17 street ibn charaf Belvedère, Tunis</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+              <h5>Contact@ourdigitalfuture.org</h5>
+              <h5>55799889</h5>
+
+
+
              
             </div>
           </div>

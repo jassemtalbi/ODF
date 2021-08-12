@@ -12,7 +12,7 @@ function Aboutus() {
         <div class="col-md-12">
           <div class="text-content">
             
-            <h4>about us</h4>
+            <h4>About ODF</h4>
             <h2>our company</h2>
           </div>
         </div>
@@ -136,6 +136,11 @@ the following digital economy projects Legal framework
             </div>
           </div>
         </div>
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>associate team member</h2>
+          </div>
+        </div>
         <div class="col-md-2">
           <div class="team-member">
             <div class="thumb-container">
@@ -146,6 +151,7 @@ the following digital economy projects Legal framework
             </div>
           </div>
           </div>
+         
         <div class="col-md-4">
           <div class="team-member">
             <div class="thumb-container">
@@ -159,6 +165,7 @@ the following digital economy projects Legal framework
                 </div>
               </div>
             </div>
+        
             <div class="down-content">
               <h4>Nebil Chemek</h4>
               <span>PMO</span>
@@ -196,7 +203,7 @@ the following digital economy projects Legal framework
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Happy Partners</h2>
+            <h2> Partners</h2>
           </div>
         </div>
         <div class="col-md-12">
@@ -217,10 +224,6 @@ the following digital economy projects Legal framework
               <img src="assets/images/3logoall.jpg" alt="5"/>
             </div>
             
-          
-            <div class="client-item">
-              <img src="assets/images/technoriat.jpg" alt="6"/>
-            </div>
           </div>
         </div>
       </div>

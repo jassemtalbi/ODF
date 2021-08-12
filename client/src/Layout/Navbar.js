@@ -33,24 +33,23 @@ function Navbar() {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+          <li class="nav-item active">
               <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
-
               </a>
-              
             </li> 
+            <li class="nav-item">
+            <a class="nav-link" href="/aboutus">what we do</a>
+            </li>
+            <li class="nav-item">
+              <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">They trusted us</Link>
+            </li>
+         
             <li class="nav-item">
               <Link to ="/project" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Project</Link>
 
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Contact Us</Link>
 
-            </li>
             <li class="nav-item">
               <Link to ="/addproject" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">add Project</Link>
 
@@ -85,21 +84,27 @@ function Navbar() {
           <li class="nav-item active">
               <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
-
               </a>
-              
             </li> 
+            <li class="nav-item">
+            <a class="nav-link" href="/aboutus">what we do</a>
+            </li>
+            <li class="nav-item">
+              <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">They trusted us</Link>
+            </li>
+         
             <li class="nav-item">
               <Link to ="/project" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Project</Link>
 
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/aboutus">About Us</a>
+              <Link to ="/team" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Team</Link>
             </li>
             <li class="nav-item">
               <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Contact Us</Link>
-
             </li>
+         
+           
             
             <li class="nav-item">
             <div class="sign_btn" onClick={logout}><a href="/register">logout</a></div>
@@ -128,20 +133,24 @@ else{
           <li class="nav-item active">
               <a class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
-
               </a>
-              
             </li> 
+            <li class="nav-item">
+            <a class="nav-link" href="/aboutus">what we do</a>
+            </li>
+            <li class="nav-item">
+              <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">They trusted us</Link>
+            </li>
+         
             <li class="nav-item">
               <Link to ="/project" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Project</Link>
 
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/aboutus">About Us</a>
+              <Link to ="/team" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Team</Link>
             </li>
             <li class="nav-item">
               <Link to ="/contactus" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">Contact Us</Link>
-
             </li>
          
            
